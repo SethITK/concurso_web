@@ -2,19 +2,28 @@
 
 ---
 
-<section>
+<section class="objectives-section" id="nosotros">
     <div class="container text-center">
         <div class="row">
-            <h3 class="">About Us</h3>
-            <h2 class="">What We Offer You</h2>
-            <div class="col">
-                <p>col</p>
+            <h3 class="s-text text-white">Nosotros</h3>
+            <h2 class="p-text text-white">Nuestra Empresa</h2>
+            <div class="col card rounded-5 m-3 d-flex flex-column align-items-center">
+                <img src="../../public/mission.png" alt="mision" width="95">
+                <span>Ser la plataforma líder en telemedicina, 
+                    facilitando el acceso a cuidados de salud de calidad para todos, 
+                    especialmente para aquellos con enfermedades crónicas.</span>
             </div>
-            <div class="col">
-                <p>col</p>
+            <div class="col card rounded-5 m-3 d-flex flex-column align-items-center">
+                <img src="../../public/vission.png" alt="vision" width="95">
+                <span>Ofrecer consultas médicas accesibles y convenientes desde la comodidad del hogar, 
+                    brindando soporte continuo y herramientas para el monitoreo y manejo de la salud de nuestros usuarios.</span>
             </div>
-            <div class="col">
-                <p>col</p>
+            <div class="col card rounded-5 m-3 d-flex flex-column align-items-center">
+                <img src="../../public/values.png" alt="valores" width="95">
+                <span>Proporcionar un servicio integral de telemedicina que 
+                    permita a las personas gestionar su salud de manera efectiva y 
+                    recibir atención médica oportuna, reduciendo la necesidad 
+                    de desplazamientos para consultas simples.</span>
             </div>
         </div>
     </div>
@@ -22,4 +31,43 @@
 
 <style>
 
+    .objectives-section {
+        background-color: var(--primario);
+        padding: 150px 180px;
+    }
+
+    span {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    .s-text {
+        font-family: "Yellowtail", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .card {
+        padding: 40px 15px 25px 15px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .card:hover {
+        scale: 105%;
+    }
+
+    .p-text {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-size: 45px;
+        font-style: normal;
+    }
+
+    .col span {
+        margin: 25px 20px;
+    }
 </style>

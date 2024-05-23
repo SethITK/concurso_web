@@ -1,0 +1,94 @@
+---
+interface Props {
+	
+}
+
+const { } = Astro.props;
+--- 
+<div class="hero-section">
+    <div class="container row mx-auto py-5">
+        <div class="col-6 px-5">
+            <div>
+                <h1 class="hero-h1">Tu Salud
+                    <br>en Buenas Manos,
+                    <br>Desde Casa </h1>
+                    <div class="py-3">
+                        <p>Bienvenido a Telmed, tu plataforma de telemedicina de confianza. Consulta con médicos expertos a través de videollamadas o mensajes de texto, monitorea tu salud con nuestro sistema avanzado y mantén un historial médico actualizado. 
+                            <br><br>Diseñado especialmente para personas con enfermedades crónicas, te ayudamos a controlar tu condición sin salir de casa. Además, encuentra consejos y artículos sobre autocuidado y salud en nuestro blog. ¡Tu bienestar es nuestra prioridad!</p>
+                    </div>
+                
+            </div>
+            <div class="py-4">
+            <button class="btn btn-scale text-white">
+                Empezemos 
+            </button>  
+            </div>
+
+            <div class="lista py-2">
+                <p>
+                    <img class="mx-2" src="../../public/house.png" width="30">Desde tu casa
+                </p>
+                <p>
+                    <img class="mx-2" src="../../public/quick.png" width="30"> Rápido
+                </p>
+                <p>
+                    <img class="mx-2" src="../../public/cyber-security.png" width="30">Seguro
+                </p>
+            </div>
+        </div>
+        <div class="col-6">
+            <img class="img" src="../../public/hero-img.jpg" width="600" height="700"alt="">
+        </div>
+    </div>
+</div>
+<style>
+
+
+
+p {
+    font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-size: 19px;
+        font-style: normal;
+}
+
+.hero-section {
+    background-color: var(--hero-back);
+}
+.hero-h1{
+    font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-size: 48px;
+        font-style: normal;
+}
+
+.btn-scale{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 18px;
+    font-style: normal;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.btn-scale:hover{
+    scale: 110%;
+}
+
+
+.img{
+    border-radius: 25px;
+}
+.btn{
+    background-color: var(--accent);
+    border-radius: 12px;
+    padding: 16px 20px;
+}
+
+.lista{
+
+}
+</style>

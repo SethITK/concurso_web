@@ -1,0 +1,202 @@
+---
+---
+
+<section class="services-section" id="consultas">
+	<h3 class="text-center">
+		Nuestra Solución
+    </h3>
+	<h2 class="text-center fw-bold mb-4">Nuestros Servicios</h2>
+	<div class="grid">
+		<div class="video grid-item d-flex bg-oscuro">
+			<div>
+				<h5 class="h5 text-white">
+					Haz videollamadas con un profesional de la salud
+				</h5>
+				<p class="text-white">
+					Habla cara a cara con médicos especializados desde la
+					comodidad de tu hogar. Ideal para consultas detalladas y
+					seguimiento continuo de tu salud.
+				</p>
+			</div>
+			<div>
+				<img class="img" src="../../public/video-call-94.png" alt="videocall"/>
+			</div>
+		</div>
+		<div
+			class="texto d-flex flex-column align-items-center grid-item bg-amber"
+		>
+			<div class="text-center">
+				<h5 class="h5 text-white">Consultas por Texto</h5>
+				<p class="text-white">
+					Comunícate rápidamente con médicos a través de mensajes de
+					texto para obtener consejos y recomendaciones inmediatas.
+					Perfecto para consultas rápidas y aclaración de dudas.
+				</p>
+			</div>
+			<div>
+				<img class="img" src="/public/texto.png" alt="" />
+			</div>
+		</div>
+		<div
+			class="monitoreo d-flex flex-column align-items-center bg-amber grid-item"
+		>
+			<div class="text-center">
+				<h5 class="h5 text-white">Monitoreo de Salud</h5>
+				<p class="text-white">
+					Mantén un registro detallado de tu salud y recibe alertas
+					personalizadas. Nuestro sistema de monitoreo te ayuda a
+					seguir de cerca tus indicadores de salud y gestionar mejor
+					tu condición.
+				</p>
+			</div>
+			<div>
+				<img class="img" src="/public/monitoreo.png" alt="" />
+			</div>
+		</div>
+		<div class="blog grid-item">
+			<div class="text-center">
+				<h5 class="h5 text-white">Blog de Salud</h5>
+				<p class="text-white">
+					Infórmate sobre autocuidado, prevención de enfermedades y
+					mucho más. Nuestro blog ofrece artículos escritos por
+					expertos para ayudarte a mantenerte saludable y bien
+					informado.
+				</p>
+			</div>
+		</div>
+		<div class="historial d-flex bg-oscuro grid-item">
+			<div>
+				<img class="img" src="/public/historial.png" alt="" />
+			</div>
+			<div class="align-text-right">
+				<h5 class="h5 text-white">Historial Médico</h5>
+				<p class="text-white">
+					Accede a tu historial médico completo y actualizado en
+					cualquier momento. Comparte esta información fácilmente con
+					tus médicos para recibir un diagnóstico y tratamiento
+					preciso.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>s
+
+<style>
+
+    .services-section {
+        background-color: var(--hero-back);
+        margin: 50px 180px;
+    }
+
+    .services-section > h3 {
+        font-family: "Yellowtail", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .services-section > h2 {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bolder !important;
+        font-size: 45px !important;
+        font-style: normal;
+    }
+
+	.grid {
+		display: grid;
+		height: 100vh;
+		min-height: 100vh;
+		grid-template-areas:
+			"video video video texto"
+			"monitoreo blog blog texto"
+			"monitoreo blog blog texto"
+			"monitoreo historial historial historial";
+		grid-template-rows: 200px;
+		gap: 20px;
+	}
+
+    .d-flex p {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-size: 20px !important;
+        font-style: normal;
+    }
+
+	.video {
+		grid-area: video;
+	}
+	.monitoreo {
+		grid-area: monitoreo;
+	}
+
+	.historial {
+		grid-area: historial;
+	}
+
+    .h5 {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bolder !important;
+        font-size: 24px !important;
+        font-style: normal;
+    }
+
+	.blog {
+		grid-area: blog;
+	}
+
+    .blog p {
+        font-family: "Urbanist", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-size: 20px !important;
+        font-style: normal;
+    }
+
+	.texto {
+		grid-area: texto;
+	}
+
+	.grid-item {
+		background-color: var(--secundario);
+		border-radius: 16px;
+		padding: 30px;
+		transition: all 0.2s ease-in-out;
+	}
+
+	.grid-item:hover {
+		scale: 105%;
+	}
+
+	.grid-item h5 {
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.grid-item p {
+		font-size: 14px;
+	}
+
+	.img {
+		width: 150px;
+		height: 150px;
+		object-fit: contain;
+	}
+
+	.align-text-right {
+		text-align: right;
+	}
+
+	.fw-bold {
+		font-weight: bold;
+	}
+
+	.bg-oscuro {
+		background-color: #dc6d18;
+	}
+
+	.bg-amber {
+		background-color: rgb(248, 197, 29);
+	}
+</style>

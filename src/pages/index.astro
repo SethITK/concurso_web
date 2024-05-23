@@ -1,22 +1,37 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Nav from '../landingpage/Nav.astro';
 import Card from '../components/Card.astro';
 import Objectives from '../landingpage/Objectives.astro';
+import Hero from '../landingpage/Hero.astro';
+import Services from '../landingpage/Services.astro'
+import Footer from '../landingpage/Footer.astro'
+import Redes from '../landingpage/Redes.astro';
+import Donacion from '../landingpage/Donacion.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<Objectives/>
-	</main>
+<Nav/>
+<Hero/>
+	<div class="bg-colorclaro">
+		<Redes />
+	</div>
+	<Objectives/>
+	<Services/>
+	<Donacion/>
 </Layout>
+<Footer/>
 
 <style>
+	.bg-colorclaro{
+		background-color: var(--hero-back);
+	}
 	main {
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: #F7F4F2;
+		color: #FFFFFF;
 		font-size: 20px;
 		line-height: 1.6;
 	}

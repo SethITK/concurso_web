@@ -1,0 +1,79 @@
+
+---
+interface Props {
+	
+}
+
+const { } = Astro.props;
+--- 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+           <div class="navbar-brand ms-4"> <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="85px" height="85px" viewBox="0 0 93 93" >
+        <rect width="150" height="150"  fill="none"/>
+        <path d="M67.5 39.3H53.1V25H39.3C39.3 32.9 32.9 39.3 25 39.3V53.1H39.3V67.4H53.1C53.1 59.5 59.6 53.1 67.5 53.1V39.3Z" fill="#201B21"/>
+      </svg> </a></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-5" id="navbarScroll">
+        <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item l">
+            <a class="nav-link active transition" aria-current="page" href="#nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item l">
+            <a class="nav-link active transition" href="#consultas">Consultas</a>
+          </li>
+          <li class="nav-item l">
+            <a class="nav-link active transition" href="#donaciones">Donaciones</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav my-2 navbar-nav-scroll">
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item sign-up px-2 mx-2 text-white">
+                <a class="nav-link text-white " href="#">Registrarse</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .navbar {
+      background-color: var(--hero-back) !important;
+    }
+
+    .transition{
+      transition: all 0.2s ease-in-out;
+      padding: 10px 20px !important;
+      border-radius: 12px !important;
+    }
+
+    .transition:hover{
+      scale: 110%;
+      background-color: var(--accent) !important;
+      color: #fff;
+
+    }
+
+    ul li a {
+      font-family: "Urbanist", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      font-size: 20px;
+      font-style: normal;
+    }
+
+    .sign-up{
+      background-color: var(--accent);
+      padding: 1px 3px 1px 3px;
+      border-radius: 45px;
+    }
+    .l{
+      margin: 0px 20px;
+    }
+    .navbar-brand{
+        padding-left: 110px;
+    }
+  </style>

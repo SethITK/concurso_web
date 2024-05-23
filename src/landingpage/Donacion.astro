@@ -1,0 +1,124 @@
+---
+interface Props {}
+
+const {} = Astro.props;
+---
+
+<div class="container my-5" id="donaciones">
+	<div class="contenedor">
+		<form class="formulario" action="">
+            <h2 class="text-center text-white mb-3">Donaciones</h2>
+			<div class="opciones">
+				<button class="opciones-item">$1</button>
+				<button class="opciones-item active">$5</button>
+				<button class="opciones-item">$10</button>
+				<button class="opciones-item">$20</button>
+			</div>
+
+			<div class="input-container">
+				<input
+					placeholder="Correo Electronico"
+					class="inputText"
+					type="text"
+				/>
+			</div>
+
+			<button class="button text-white">Donar</button>
+		</form>
+	</div>
+</div>
+
+<style>
+
+    .text-center {
+        font-family: "Urbanist", sans-serif !important;
+        font-optical-sizing: auto;
+        font-weight: normal !important;
+        font-size: 30px !important;
+        font-style: normal;
+    }
+
+    .active {
+        background-color: #a15d30 !important;
+        color: white !important;
+    }
+
+    .button {
+        font-family: "Urbanist", sans-serif !important;
+        font-optical-sizing: auto;
+        font-weight: normal !important;
+        font-size: 20px !important;
+        font-style: normal;
+    }
+
+	.opciones {
+		display: flex;
+		gap: 10px;
+	}
+
+	.opciones-item {
+		border-radius: 12px;
+		flex: 1;
+		border: none;
+		background-color: #fff;
+		height: 80px;
+
+        font-family: "Urbanist", sans-serif !important;
+        font-optical-sizing: auto;
+        font-weight: normal !important;
+        font-size: 18px !important;
+        font-style: normal;
+	}
+	.formulario {
+		padding: 30px;
+		border-radius: 16px;
+		display: flex;
+		flex-direction: column;
+		max-width: 700px;
+		margin: auto;
+		gap: 14px;
+	}
+
+	.button {
+		background-color: #4f3422;
+		border: none;
+		padding: 12px 20px;
+		border-radius: 12px;
+		font-weight: bold;
+	}
+
+	.botton:hover {
+		background-color: #a15d30;
+	}
+
+	.input-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+        font-family: "Urbanist", sans-serif !important;
+        font-optical-sizing: auto;
+        font-weight: normal !important;
+        font-size: 18px !important;
+        font-style: normal;
+	}
+
+	.input-container input {
+		border: 1px solid #db6a1f;
+		outline: none;
+		transition: all 0.2s ease-in-out;
+		padding: 10px 20px;
+		border-radius: 12px;
+	}
+    .contenedor{
+        background-color: var(--secundario);
+        border-radius: 12px;
+        max-width: 600px;
+        margin: auto;
+        padding: 40px;
+    }
+
+	.input-container input:focus {
+		border-bottom: 2px solid #4f3422;
+	}
+</style>

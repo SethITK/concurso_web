@@ -39,7 +39,7 @@ const {} = Astro.props;
     }
 
     .active {
-        background-color: #a15d30 !important;
+        background-color: var(--accent) !important;
         color: white !important;
     }
 
@@ -80,7 +80,7 @@ const {} = Astro.props;
 	}
 
 	.button {
-		background-color: #4f3422;
+		background-color: var(--secundario);
 		border: none;
 		padding: 12px 20px;
 		border-radius: 12px;
@@ -104,17 +104,18 @@ const {} = Astro.props;
 	}
 
 	.input-container input {
-		border: 1px solid #db6a1f;
+		border: 1px solid var(--accent);
 		outline: none;
 		transition: all 0.2s ease-in-out;
 		padding: 10px 20px;
 		border-radius: 12px;
 	}
     .contenedor{
-        background-color: var(--secundario);
+        background-color: var(--primario);
         border-radius: 12px;
         max-width: 600px;
         margin: auto;
+		margin-bottom: 100px;
         padding: 40px;
     }
 
